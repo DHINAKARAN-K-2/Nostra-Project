@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!--TailWind CSS CDN Link-->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!--Font Awesome CDN Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="m-0 p-0">
+    <!--Offer bar-->
+    <div class="bg-black text-white text-center h-7 md:h-12" id="offer" >
+        <p class="text-1xl md:text-2xl" style="display: inline;">Sign Up and <b>GET 20% OFF</b> for your first Order
+        </p>
+        <button class="ml-9 cursor-pointer" id="closebtn">X</button>
+    </div>
+    <!--Navbar for mobile view-->
+    <div id="mobile-menu" class="fixed top-3 left-0 h-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300 md:hidden z-50">
+        <button id="close-btn" class="relative mx-2 top-3 left-3"><i class="fa-solid fa-xmark " style="color: #000000;"></i></button>
+        <ul class="flex flex-col gap-6 mx-9 p-6 font-medium">
+            <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
+            <li><a href="#new-arrival" class="hover:text-blue-600">New Arrivals</a></li>
+             <li><a href="#most-wanted" class="hover:text-blue-600">Most Wanted</a></li>
+             <li><a href="collection.html" class="hover:text-blue-600">Collections</a></li>
+            <li><a href="contact.html" class="hover:text-blue-600">Contact</a></li>
+
+
+        </ul>
+
+    </div>
+    <!--Responsive Navbar-->
+    <nav class="flex bg-white justify-between text-center items-center p-4 sticky top-0 z-10">
+        <h1 class="text-2xl font-bold md:text-4xl">Nostra</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6 cursor-pointer md:hidden" id="menu-btn">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <ul class="flex gap-8 hidden md:flex ">
+            <a href="index.html">
+                <li class="px-3 py-2 rounded-lg hover:bg-gray-500 cursor-pointer hover:text-white">Home</li>
+            </a>
+            <a href="#new-arrival">
+                <li class="px-3 py-2 rounded-lg hover:bg-gray-500 cursor-pointer hover:text-white">New Arrival</li>
+            </a>
+            <a href="#most-wanted" >
+                <li class="px-3 py-2 rounded-lg hover:bg-gray-500 cursor-pointer hover:text-white">Most Wanted</li>
+            </a>
+            <a href="collection.html">
+                <li class="px-3 py-2 rounded-lg hover:bg-gray-500 cursor-pointer hover:text-white">Collection</li>
+            </a>
+            <a href="contact.html">
+                <li class="px-3 py-2 rounded-lg hover:bg-gray-500 cursor-pointer hover:text-white">Contact Us</li>
+            </a>
+
+        </ul>
+
+    </nav>
+
+    <!--Slider-->
+    <div class="bg-cover bg-center flex flex-col items-center text-center justify-center relative text-white px-4">
+        <img src="./img/slider-one.jpg" alt="" class="w-full">
+        <div class="absolute p-1 md:p-2 ">
+            <h1 class="text-2xl md:text-6xl font-bold">Level Up Your Style with our</h1>
+            <p class="mt-2 md:mt-6">Summer Collection</p>
+            <button class="mt-2 text-black bg-white md:p-3 p-2 rounded-md hover:bg-gray-300 md:mt-6">Shop Now →</button>
+        </div>
+    </div>
+    <!--Brand-->
+    <div class="mt-2 px-4 md:mt-5">
+        <h1 class="text-2xl font-bold md:text-5xl ">Brands</h1>
+        <div class="flex mx-auto px-2 py-3 justify-between items-center md:px-4 py-8">
+            <div>
+                <img src="./img/adidas.png" alt="" class="h-6 md:h-20">
+                <h1 class="text-1xl font-bold md:text-3xl">Adidas</h1>
+            </div>
+            <div>
+                <img src="./img/brand-1.png" alt="" class="h-6 md:h-20">
+                <h1 class="text-1xl font-bold md:text-3xl">Behance</h1>
+            </div>
+            <div>
+                <img src="./img/leaves (1).png" alt="" class="h-6 md:h-20">
+                <h1 class="text-1xl font-bold md:text-3xl">Leaves</h1>
+            </div>
+            <div>
+                <img src="./img/simple.png" alt="" class="h-6 md:h-20">
+                <h1 class="text-1xl font-bold md:text-3xl">Simple</h1>
+            </div>
+            <div>
+                <img src="./img/twitch.png" alt="" class="h-6 md:h-20">
+                <h1 class="text-1xl font-bold md:text-3xl">Twitch</h1>
+            </div>
+            <div>
+                <img src="./img/puma.jpg" alt="" class="h-6 md:h-20">
+                <h1 class="text-1xl font-bold md:text-3xl">Puma</h1>
+            </div>
+
+        </div>
+
+    </div>
+    <!--Customer Experience-->
+    <div class="px-4 mt-2 md:mt-5">
+        <div class="py-4">
+            <h1 class="text-2xl font-bold md:text-4xl">We Provide Best<br>
+                Customer Experiences</h1>
+
+        </div>
+    </div>
+    <!-- Features Grid -->
+    <div class="grid grid-cols-2 mt-2 sm:grid-cols-2 md:grid-cols-4 mt-5 px-4  gap-6">
+        <!-- Feature 1 -->
+        <div class="bg-gray-200 p-6 rounded-lg shadow hover:shadow-lg transition">
+            <div class="text-3xl mb-3 "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="w-20">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+            </div>
+            <h3 class="text-lg font-semibold">Original Products</h3>
+            <p class="text-gray-600 mt-2 text-sm">
+                We provide only authentic and high-quality products.
+            </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-gray-200 p-6 rounded-lg shadow hover:shadow-lg transition">
+            <div class="text-3xl mb-3"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="w-20">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+                </svg>
+            </div>
+            <h3 class="text-lg font-semibold">Satisfaction Guarantee</h3>
+            <p class="text-gray-600 mt-2 text-sm">
+                We ensure you get what you expect — or your money back.
+            </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-gray-200 p-6 rounded-lg shadow hover:shadow-lg transition">
+            <div class="text-3xl mb-3"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="w-20">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42" />
+                </svg>
+            </div>
+            <h3 class="text-lg font-semibold">New Arrivals Everyday</h3>
+            <p class="text-gray-600 mt-2 text-sm">
+                Fresh collections updated daily to suit your style.
+            </p>
+        </div>
+        <!-- Feature 4 -->
+        <div class="bg-gray-200 p-6 rounded-lg shadow hover:shadow-lg transition">
+            <div class="text-3xl mb-3"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="w-20">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                </svg>
+            </div>
+            <h3 class="text-lg font-semibold">Fast & Free Shipping</h3>
+            <p class="text-gray-600 mt-2 text-sm">
+                Quick delivery with free shipping on all orders.
+            </p>
+        </div>
+    </div>
+
+
+
+    </div>
+    <!--New Arrivals-->
+
+    <div class=" mt-5 px-4" id="new-arrival">
+        <!-- Title -->
+        <h2 class="text-2xl md:text-3xl font-bold mb-8">New Arrivals</h2>
+        <!-- Grid -->
+        <div class=" grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
+
+            <!-- Product Card -->
+            <div class="relative group">
+                <!-- Sale Badge -->
+                <span
+                    class="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">Sale</span>
+                <img src="./img/n1.jpg" alt="Product" class="w-full rounded-lg hover:shadow-xl">
+                <!-- Shop Now Button (hidden until hover) -->
+                <div
+                    class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition bg-black/40 rounded-lg">
+                    <p class="bg-white px-4 py-2 text-sm font-semibold rounded shadow cursor-pointer hover:bg-gray-100">
+                        Shop Now →</p>
+                </div>
+            </div>
+            <!-- Product Card -->
+            <div class="relative group">
+                <!-- Sale Badge -->
+                <span
+                    class="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">Sale</span>
+                <img src="./img/f1.jpg" alt="Product" class="w-full rounded-lg hover:shadow-xl ">
+                <!-- Shop Now Button (hidden until hover) -->
+                <div
+                    class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition bg-black/40 rounded-lg">
+                    <p class="bg-white px-4 py-2 text-sm font-semibold rounded shadow cursor-pointer hover:bg-gray-100">
+                        Shop Now →</p>
+                </div>
+            </div>
+            <!-- Product Card -->
+            <div class="relative group">
+                <!-- Sale Badge -->
+                <span
+                    class="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">Sale</span>
+                <img src="./img/f7.jpg" alt="Product" class="w-full rounded-lg hover:shadow-xl">
+                <!-- Shop Now Button (hidden until hover) -->
+                <div
+                    class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition bg-black/40 rounded-lg">
+                    <p class="bg-white px-4 py-2 text-sm font-semibold rounded shadow cursor-pointer hover:bg-gray-100">
+                        Shop Now →</p>
+                </div>
+            </div>
+            <!-- Product Card -->
+            <div class="relative group">
+                <!-- Sale Badge -->
+                <span
+                    class="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">Sale</span>
+                <img src="./img/n7.jpg" alt="Product" class="w-full rounded-lg hover:shadow-xl">
+                <!-- Shop Now Button (hidden until hover) -->
+                <div
+                    class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition bg-black/40 rounded-lg">
+                    <p class="bg-white px-4 py-2 text-sm font-semibold rounded shadow cursor-pointer hover:bg-gray-100">
+                        Shop Now →</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Most Wanted Section -->
+    <section class=" py-10 bg-white" id="most-wanted">
+        <div class=" px-4">
+            <!-- Title -->
+            <h2 class="text-2xl font-bold mb-6">Most Wanted</h2>
+
+            <!-- Horizontal Scroll -->
+            <div class="">
+                <div class=" grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
+
+                    <!-- Product Card 1 -->
+                    <div class=" bg-white rounded-xl shadow p-4 text-center">
+                        <div class="relative">
+                            <img src="./img/f1.jpg" class="w-full h-full object-cover rounded-lg" alt="">
+                            <span
+                                class="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded">Sale</span>
+                            <!-- Wishlist Icon -->
+                            <button class="absolute bottom-2 right-2 text-gray-600 hover:text-red-500"> ❤</button>
+                        </div>
+                        <h3 class="mt-3 font-semibold">Black Floral Shirt</h3>
+                      
+                    </div>
+                    <!-- Product Card 1 -->
+                    <div class="w-full bg-white rounded-xl shadow p-4 text-center">
+                        <div class="relative">
+                            <img src="./img/x1.jpg" class="w-full h-full object-cover rounded-lg" alt="">
+                            <span class="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded">
+                                Sale
+                            </span>
+                            <!-- Wishlist Icon -->
+                            <button class="absolute bottom-2 right-2 text-gray-600 hover:text-red-500">
+                                ❤
+                            </button>
+                        </div>
+                        <h3 class="mt-3 font-semibold">Gray Casual Shirt</h3>
+                        
+                    </div>
+                    <!-- Product Card 1 -->
+                    <div class="w-full bg-white rounded-xl shadow p-4 text-center">
+                        <div class="relative">
+                            <img src="./img/n3.jpg" class="w-full h-full object-cover rounded-lg" alt="">
+                            <span class="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded">
+                                Sale
+                            </span>
+                            <!-- Wishlist Icon -->
+                            <button class="absolute bottom-2 right-2 text-gray-600 hover:text-red-500">
+                                ❤
+                            </button>
+                        </div>
+                        <h3 class="mt-3 font-semibold">Classic White Shirt</h3>
+                       
+                    </div>
+                    <!-- Product Card 1 -->
+                    <div class="w-full bg-white rounded-xl shadow p-4 text-center">
+                        <div class="relative">
+                            <img src="./img/n8.jpg" class="w-full h-full object-cover rounded-lg" alt="">
+                            <span class="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded">
+                                Sale
+                            </span>
+                            <!-- Wishlist Icon -->
+                            <button class="absolute bottom-2 right-2 text-gray-600 hover:text-red-500">
+                                ❤
+                            </button>
+                        </div>
+                        <h3 class="mt-3 font-semibold">Navy Button-Down Shirt</h3>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Offer Section-->
+    <div class="flex flex-col text-white h-auto mx-4 p-8 md:items-center bg-gray-900 md:flex-row ">
+        <div class="md:w-1/2">
+            <img src="./img/offer.jpg" alt="" class="w-full h-auto object-cover rounded-lg">
+        </div>
+        <div class="md:w-1/2 md:pl-8 mt-4 md:mt-0">
+            <h1 class="text-4xl font-bold mb-2">Limited Offer</h1>
+            <p class="text-2xl font-bold">35% OFF on this for the first 30 <br> Customers</p>
+            <button class="py-2 px-4 mt-4 bg-white cursor-pointer text-black rounded-lg  hover:bg-gray-300">Shop Now
+                -></button>
+        </div>
+
+    </div>
+    <!--News Paper Letter-->
+    <div class="mt-4 items-center text-center">
+        <h1 class="text-2xl font-bold md:text-4xl mt-2">Join our News Letter</h1>
+        <p class="text-1xl mt-2 md:text-3xl">Signup for our email newspaper to get exclusive discounts, updates, and
+            more</p>
+        <input type="text" placeholder="Newsletter...." class="border border-black container p-3 mt-5"><br>
+        <button class="text-white bg-gray-800 px-4 py-2 rounded-xl mt-5 ">Subscribe -></button>
+
+    </div>
+    <!--Footer-->
+    <div class="bg-gray-900 p-4 text-white flex flex-col mt-5">
+        <h1 class="text-2xl md:text-4xl font-bold p-4">Nostra</h1>
+        <p class="text-1xl p-4 md:text-3xl ">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below
+            for those interest</p>
+        <ul class="p-4 flex gap-4">
+            <li><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></li>
+            <li><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i></li>
+            <li><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i></li>
+        </ul>
+        <p class="p-4">@ 2023 Nostra.com</p>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+
+
+
+
+</body>
+
+</html>
