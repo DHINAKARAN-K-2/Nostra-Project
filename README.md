@@ -27,4 +27,4 @@ This project focuses on clean UI, smooth user experience, and mobile-first respo
 ## 📂 Project Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/errormakesclever/Nostra-Ecommerce-Js.git 
+   git clone https://github.com/DHINAKARAN-K-2/Nostra-Project.git 
