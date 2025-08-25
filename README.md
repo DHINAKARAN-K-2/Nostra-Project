@@ -6,7 +6,7 @@ This project focuses on clean UI, smooth user experience, and mobile-first respo
 ---
 
 ## 🚀 Live Demo
-👉 [View Demo](https://errormakesclever.github.io/Nostra-Ecommerce-Js/)
+👉 [View Demo](https://dhinakaran-k-2.github.io/Nostra-Project/)
 
 ---
 
