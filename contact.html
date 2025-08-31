@@ -14,14 +14,14 @@
 </head>
 
 <body class="m-0 p-0">
-    <!--Offer bar-->
+    <!-- Offer bar-->
     <div class="bg-black text-white text-center h-7 md:h-12" id="offer">
         <p class="text-1xl md:text-2xl" style="display: inline;">Sign Up and <b>GET 20% OFF</b> for your first Order
         </p>
         <button class="ml-9 cursor-pointer" id="closebtn">X</button>
-    </div>
+    </div> 
     <!--Navbar for mobile view-->
-    <div id="mobile-menu" class="fixed top-3 left-0 h-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300 md:hidden z-50">
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full bg-gray-200 shadow-lg transform -translate-x-full transition-transform duration-300 md:hidden z-50">
         <button id="close-btn" class="relative top-3 mx-2 left-3"><i class="fa-solid fa-xmark " style="color: #000000;"></i></button>
         <ul class="flex flex-col gap-6 mx-9 p-6 font-medium">
             <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
@@ -63,40 +63,40 @@
 
     </nav>
     <!--Contact Form-->
-    <div class="flex items-center justify-center p-12">
-        <div class="mx-auto w-full max-w-[550px]  bg-gray-900 p-7 rounded-xl text-white ">
-            <form action="https://fabform.io/f/{form-id}" method="post">
+    <div class="flex items-center justify-center p-6 md:p-12">
+        <div class="mx-auto w-full max-w-[550px]  bg-gray-900 p-4 md:p-7 rounded-lg text-white ">
+            <form method="post">
                 <div class="mb-5">
                     <label for="name" class="mb-3 block text-base font-medium text-[#07074D]">
                         Full Name
                     </label>
-                    <input type="text" name="name" id="name" placeholder="Full Name"
-                        class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                    <input type="text" name="name" id="name" placeholder="Full Name" required
+                        class="w-full rounded-md border text-black border-[#e0e0e0] bg-white py-3 px-2 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
                 </div>
                 <div class="mb-5">
                     <label for="email" class="mb-3 block text-base font-medium text-[#07074D]">
                         Email Address
                     </label>
-                    <input type="email" name="email" id="email" placeholder="example@domain.com"
-                        class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                    <input type="email" name="email" id="email" placeholder="example@domain.com" required
+                        class="w-full rounded-md border text-black border-[#e0e0e0] bg-white py-3 px-2 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
                 </div>
                 <div class="mb-5">
                     <label for="subject" class="mb-3 block text-base font-medium text-[#07074D]">
                         Subject
                     </label>
-                    <input type="text" name="subject" id="subject" placeholder="Enter your subject"
-                        class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                    <input type="text" name="subject" id="subject" placeholder="Enter your subject" required
+                        class="w-full rounded-md border text-black border-[#e0e0e0] bg-white py-3 px-2 text-base font-medium text-[#010101] outline-none focus:border-[#6A64F1] focus:shadow-md" />
                 </div>
                 <div class="mb-5">
                     <label for="message" class="mb-3 block text-base font-medium text-[#07074D]">
                         Message
                     </label>
                     <textarea rows="4" name="message" id="message" placeholder="Type your message"
-                        class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"></textarea>
+                        class="w-full resize-none text-black rounded-md border border-[#e0e0e0] bg-white py-3 px-2 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"></textarea>
                 </div>
                 <div>
                     <button
-                        class="hover:shadow-form hover:bg-blue-600 hover:text-white rounded-md bg-white py-3 px-8 text-base font-semibold text-black outline-none">
+                        class="hover:shadow-form hover:bg-blue-600 hover:text-white rounded-md bg-white px-4 py-2 md:py-3 md:px-8 text-base font-semibold text-black outline-none">
                         Submit
                     </button>
                 </div>
